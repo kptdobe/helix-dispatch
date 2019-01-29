@@ -14,21 +14,10 @@
   ~ See the License for the specific language governing permissions and
   ~ limitations under the License.
   -->
-  
-Helix - dispatch
-=======================
 
-Welcome to Helix. This is a started project to get you going with helix.
-You will find some example templates in the `src` directory. 
+# Helix - dispatch
 
-Quick Start
------------
+Dispatch example for Helix: how to have multiple renderers and dispatch the rendering based on the content type (url based filter in the samples):
 
-To compile the scripts and start the development server do:
-
-```bash
-$ hlx up
-```
-
-and open your browser at http://localhost:3000/.
-
+http://localhost:3000/red
+http://localhost:3000/green

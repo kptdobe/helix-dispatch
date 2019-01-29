@@ -14,10 +14,21 @@
   ~ See the License for the specific language governing permissions and
   ~ limitations under the License.
   -->
+![helix-logo](./helix_logo.png) <!-- this image is served from this content repository -->
 
 # Helix - dispatch
 
-Dispatch example for Helix: how to have multiple renderers and dispatch the rendering based on the content type (url based filter in the samples):
+It works! dispatch is up and running.
 
-http://localhost:3000/red
-http://localhost:3000/green
+## What's next?
+
+1. Try editing `index.md` and see what happens.
+2. Try editing `src/html.htl` to change the HTML output
+3. Try editing `src/static/style.css` to change the way this page looks
+
+## And then?
+
+4. Commit your changes: `git commit -a`
+5. Publish your project to GitHub: `git add git remote add origin https://github.com/user/repo.git && git push`
+6. Deploy the project: `hlx deploy`
+7. Make it visible to the world: `hlx publish`
