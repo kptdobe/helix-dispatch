@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <!--
   ~ Licensed to the Apache Software Foundation (ASF) under one or more
   ~ contributor license agreements.  See the NOTICE file distributed with
@@ -14,10 +15,26 @@
   ~ See the License for the specific language governing permissions and
   ~ limitations under the License.
   -->
+<html>
 
-# Helix - dispatch
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <title>${content.title}</title>
+    <link rel="stylesheet" href="/bootstrap.min.css" />
+</head>
 
-Dispatch example for Helix: how to have multiple renderers and dispatch the rendering based on the content type (url based filter in the samples):
+<body style="background-color: green">
 
-http://localhost:3000/red
-http://localhost:3000/green
+    <div data-sly-list="${content.children}">
+        <div class="container-fluid">${item}</div>
+    </div>
+
+    <div class="container-fluid">
+        <em>generated at ${content.time}</em>
+    </div>
+
+</body>
+
+</html>

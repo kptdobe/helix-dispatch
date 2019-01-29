@@ -22,7 +22,12 @@
  * @param payload.content The content
  */
 function pre(payload) {
-  payload.content.time = `${new Date()}`;
+  payload.dispatch = {};
+  let selector = 'green';
+  if (payload.request.url.indexOf('/red') !== -1) {
+    selector = 'red';
+  }
+  payload.dispatch.url = payload.request.url.replace(/\.html/, `.${selector}.html`);
 }
 
 module.exports.pre = pre;
